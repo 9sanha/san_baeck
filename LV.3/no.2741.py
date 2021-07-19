@@ -11,3 +11,8 @@ def limite(n,limite_num):
         print('입력오류 : 입력한 숫자가 입력 범위를 벗어났습니다.(입력범위:1~',limite_num,')')
     else:
         return True
+n = int(input('자연수를 입력하세요: '))
+if(limite(n,100000)):
+    for i in range(1,n+1):
+        print(i)
+
