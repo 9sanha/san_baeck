@@ -20,10 +20,27 @@ def limite(n,limite_num):
         return True
 max=0
 index=0
+arr =[]
+#1. 배열 안쓴것
+# for i in range(9):
+#     print(int(i)+1,'번째: ',end='')
+#     n = int(input())
+#     if(max<n):
+#         max=n
+#         index=int(i)+1
+# print('가장 큰 수 :',max,' index:',index)
+
+#2.배열 쓴것
 for i in range(9):
     print(int(i)+1,'번째: ',end='')
-    n = int(input())
-    if(max<n):
-        max=n
-        index=int(i)+1
+    arr.append(input())
+arr= list(map(int,arr))
+count=1
+for j in arr:
+    if max<j:
+        max = j
+        index = count
+    count+=1
+
 print('가장 큰 수 :',max,' index:',index)
+
